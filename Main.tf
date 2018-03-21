@@ -12,3 +12,4 @@ resource "aws_instance" "instance_Ex" {
 tags {
     	Name = "SKY01"
   }
+run terraform apply
