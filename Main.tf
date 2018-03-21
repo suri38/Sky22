@@ -7,9 +7,9 @@ provider "aws" {
 resource "aws_instance" "instance_Ex" {
         ami = "ami-b374d5a5"
         instance_type = "t2.micro"
-}
 
 tags {
     	Name = "SKY01"
-  }
+     }
+}
 run terraform apply
