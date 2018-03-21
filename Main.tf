@@ -1,4 +1,5 @@
-provider "aws" {
+[
+        provider "aws" {
         access_key = "AKIAIOBWVSLOXKG6RNBQ"
         secret_key = "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"
         region = "us-east-1d"
@@ -12,3 +13,4 @@ resource "aws_instance" "instance_Ex" {
         Name = "SKY01"
              }
          }
+ ]
