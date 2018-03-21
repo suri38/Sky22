@@ -12,5 +12,3 @@ resource "aws_instance" "instance_Ex" {
 tags {
     	Name = "SKY01"
   }
-  $ terraform init
-  $ terraform apply
