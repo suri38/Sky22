@@ -8,7 +8,8 @@ resource "aws_instance" "SKY01" {
         ami = "ami-b374d5a5"
         instance_type = "t2.micro"
 }
-	tags {
+
+tags {
     	Name = "SKY01"
   }
   $ terraform init
