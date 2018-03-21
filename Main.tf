@@ -4,7 +4,7 @@ provider "aws" {
         region = "us-east-1d"
 }
 
-resource "aws_instance" "SKY01" {
+resource "aws_instance" "instsnce" {
         ami = "ami-b374d5a5"
         instance_type = "t2.micro"
 }
