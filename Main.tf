@@ -15,6 +15,7 @@ resource "aws_launch_configuration" "sky_ASG" {
                 create_before_destroy = true
                 }
         }       
+
 resource "aws_security_group" "new_insta"{
         name = "sky_sec_insta"
         
@@ -28,21 +29,21 @@ resource "aws_security_group" "new_insta"{
         lifecycle{
                 create_before_destroy = true
                 }
-}
+        }
 
 data "aws_availability_zones" "all" {}
 
 resource "aws_autoscaling_group" "sky_ASG"{
-launch_configuration = "${aws_launch_configuration.sky_ASG.id}"
-min_size = 2
-max_size = 4
+                launch_configuration = "${aws_launch_configuration.sky_ASG.id}"
+                min_size = 2
+                max_size = 4
 
-tag{
-key="name"
-value ="new_asg"
-propagate_at_launch = true
-}
-}
+        tag{
+                key="name"
+                value ="new_asg"
+                propagate_at_launch = true
+            }
+        }
 
 
 resource "aws_elb" "sky_elb" {
