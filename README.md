@@ -1,4 +1,4 @@
-The obective is to create any two or more AWS services using terraform platform
+The objective is to create any two or more AWS services using terraform platform
 
 Steps are listed below:
 
