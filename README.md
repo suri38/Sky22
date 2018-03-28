@@ -12,3 +12,7 @@ Steps are listed below:
     04 Create Auto Scaling for min 2 and max 4 instances
     
     Also, Create an S3 bucket
+   
+   Run Terraform Plan
+   
+   Run Tertaform Apply
