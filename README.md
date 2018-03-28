@@ -9,6 +9,6 @@ Steps are listed below:
          
     03 Create a Security Group
     
-    04 Create Auto Scaling for min 4 and max 4 instances
+    04 Create Auto Scaling for min 2 and max 4 instances
     
     Also, Create an S3 bucket
